@@ -15,6 +15,7 @@ import { AddTeamComponent } from './add-team/add-team.component';
 import { FormsModule } from '@angular/forms';
 import { PlayerComponent } from './player/player.component';
 import { EditTeamComponent } from './edit-team/edit-team.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { EditTeamComponent } from './edit-team/edit-team.component';
     AddPlayerComponent,
     AddTeamComponent,
     PlayerComponent,
-    EditTeamComponent
+    EditTeamComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
@@ -61,7 +63,7 @@ import { EditTeamComponent } from './edit-team/edit-team.component';
       },
       {
         path: "**",
-        component: ErrorPageComponent
+        component:ErrorPageComponent
         }
         
       ])
