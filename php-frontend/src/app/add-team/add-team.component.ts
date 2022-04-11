@@ -27,8 +27,8 @@ export class AddTeamComponent implements OnInit {
         this.setDefaultForm();      
       }, 
       error:(err)=>{
-        console.log("Find an error", err);
-        alert("Error Found\n"+err);
+        console.log("error", err);
+        alert("Error "+err);
       },
       complete:()=>{
         alert("Team Added Succesfully");

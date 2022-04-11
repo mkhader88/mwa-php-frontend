@@ -58,7 +58,12 @@ import { EditTeamComponent } from './edit-team/edit-team.component';
       {
         path:"team/edit/:teamId",
         component:EditTeamComponent
-      }
+      },
+      {
+        path: "**",
+        component: ErrorPageComponent
+        }
+        
       ])
       
   ],

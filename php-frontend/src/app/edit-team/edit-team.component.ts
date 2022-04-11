@@ -38,7 +38,7 @@ export class EditTeamComponent implements OnInit {
       next:(result)=>{
       }, 
       error:(err)=>{
-        console.log("Find an error", err);
+        console.log("error", err);
         this.editTeamEmitter.emit(500);
       },
       complete:()=>{

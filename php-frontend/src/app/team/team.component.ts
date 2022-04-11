@@ -27,7 +27,7 @@ export class TeamComponent implements OnInit {
         this.team = result;
       }, 
       error:(err)=>{
-        console.log("Find an error", err);
+        console.log("error", err);
       },
       complete:()=>{
         console.log("Get All teams Completed");
